@@ -62,6 +62,10 @@ a:hover {
 li {
     display: inline;
 }
+.light {
+    color: #13559c;
+    font-weight: bolder;
+}
 .logo {
     width: 187px;
     height: 67px;
