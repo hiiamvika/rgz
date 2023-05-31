@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="rgs.js"></script></script>
+    <style>
+        table {
+            font-family: sans-serif;
+            text-align: left;
+            border-collapse: separate;
+            border-spacing: 5px;
+            background-color: rgb(235, 226, 226);
+            border: 10px solid;
+            border-color: rgb(203, 203, 203);
+            border-radius: 20px;
+            margin: 20px;
+        }
+        th {
+            font-size: 28px;
+            padding: 10px;
+            text-align: center;
+        }
+        td {
+            background-color:rgb(199, 157, 157);
+            text-align: center;
+            padding: 5px;
+            font-size: 22px;
+            font-weight:bold ;
+            border-radius: 5px;
+            color: rgb(49, 49, 49);
+        }
+        .block {
+            font-family: sans-serif;
+            text-align: center;
+            border-spacing: 5px;
+            background-color: rgb(235, 226, 226);
+            border: 10px solid;
+            border-color: rgb(203, 203, 203);
+            border-radius: 20px;
+            margin: 20px;
+            font-size: 25px;
+            font-weight: bold;
+            width: 345px;
+            height: 69px;
+            margin: 23px;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body onload="minmaxsr()">
+    <header>
+        <div class="positionHeader">
+        <div class="logoDiv"><a href="main-page.html" target="_self"><img src="logo2.png" class="logo"></a></div>
+        <div>
+        <ul>
+            <li> <a href="main-page.html" target="_self">О корпорации</a></li>
+            <li><a href="fin_poc.html" target="_self" class="light">Основные финансовые показатели</a></li>
+            <li><a href="contact.html" target="_self">Контактные данные</a></li>
+            <li><a href="video.html" target="_self">Видео</a></li>
+        </ul>
+        </div>
+        </div>
+        <div class="header-text">
+            <div class="header-textH1">Лидер по поставкам титана для</div><br>
+            <div class="header-textH2">
+            -атомной индустрии<br>
+            -космоса<br>
+            -судостроения<br>
+            -машиностроения<br>
+            -медицины<br>
+            -авиации<br>
+            </div> 
+        </div>
+    </header>
+    <main>
+        <h1>Основные финансовые показатели Корпорации ВСМПО-АВИСМА</h1>
+        <div style="display: flex; position: relative;left: 27%;">
+        <table>
+            <tr>
+                <th colspan="2">Цены закрытия на апрель</th>
+            </tr>
+            <tr>
+            <th>Дата</th>
+            <th>Цена закрытия</th>
+        </tr>
+        <tr>
+            <td>01.04.2023</td>
+            <td>52820&#8381;</td>
+        </tr>
+        <tr>
+            <td>03.04.2023</td>
+            <td>46280&#8381;</td>
+        </tr>
+        <tr>
+            <td>04.04.2023</td>
+            <td>46280&#8381;</td>
+        </tr>
+        <tr>
+            <td>05.04.2023</td>
+            <td>46360&#8381;</td>
+        </tr>
+        <tr>
+            <td>06.04.2023</td>
+            <td>46620&#8381;</td>
+        </tr>
+        <tr>
+            <td>07.04.2023</td>
+            <td>46980&#8381;</td>
+        </tr>
+        <tr>
+            <td>10.04.2023</td>
+            <td>46980&#8381;</td>
+        </tr>
+        <tr>
+            <td>11.04.2023</td>
+            <td>46820&#8381;</td>
+        </tr>
+        <tr>
+            <td>12.04.2023</td>
+            <td>64000&#8381;</td>
+        </tr>
+        <tr>
+            <td>13.04.2023</td>
+            <td>53980&#8381;</td>
+        </tr>
+        <tr>
+            <td>14.04.2023</td>
+            <td>52900&#8381;</td>
+        </tr>
+        <tr>
+            <td>17.04.2023</td>
+            <td>54060&#8381;</td>
+        </tr>
+        <tr>
+            <td>18.04.2023</td>
+            <td>53120&#8381;</td>
+        </tr>
+        <tr>
+            <td>19.04.2023</td>
+            <td>52640&#8381;</td>
+        </tr>
+        <tr>
+            <td>20.04.2023</td>
+            <td>51920&#8381;</td>
+        </tr>
+        <tr>
+            <td>21.04.2023</td>
+            <td>52020&#8381;</td>
+        </tr>
+        <tr>
+            <td>24.04.2023</td>
+            <td>52660&#8381;</td>
+        </tr>
+        <tr>
+            <td>25.04.2023</td>
+            <td>52160&#8381;</td>
+        </tr>
+        <tr>
+            <td>26.04.2023</td>
+            <td>51820&#8381;</td>
+        </tr>
+        <tr>
+            <td>27.04.2023</td>
+            <td>52660&#8381;</td>
+        </tr>
+        <tr>
+            <td>28.04.2023</td>
+            <td>52820&#8381;</td>
+        </tr>
+        </table>
+        <div>
+        <div class="block">Капитализация <br>571 634 494 040&#8381;</div>
+        <div class="block">Общее число акций <br>11 529 538&#8381;</div>
+        <div id="max" class="block">Максимальное значение</div>
+        <div id="min" class="block">Минимальное значение</div>
+        <div id="sr" class="block"></div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div><a href="https://www.vsmpo.ru/" target="_self"><img src="logo.png" style="width: 12%;height: 90%;"></a></div>
+        <a href="#" target="_self" class="footerS">Ссылка на GitHub</a>
+    </footer>
+</body>
+</html>
